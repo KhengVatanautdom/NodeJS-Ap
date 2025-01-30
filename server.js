@@ -1,8 +1,6 @@
-const http = require('http');
+var http = require('http');
 
 http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello, World!\n');
-}).listen(3000);
-
-console.log('Server running at http://localhost:3000/');
+  res.write('I am Learning Cloud Developing');
+  res.end();
+}).listen(3000, '0.0.0.0'); // Changed to port 3000
